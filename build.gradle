@@ -25,7 +25,6 @@ repositories {
 
 
 dependencies {
-	implementation('org.springframework.boot:spring-boot-starter-jersey')
 	implementation('org.springframework.boot:spring-boot-starter-web')
     compile 'org.springframework.boot:spring-boot-starter-security'
     compile group: 'org.springframework.security.oauth.boot', name: 'spring-security-oauth2-autoconfigure', version: '2.1.0.RELEASE'
