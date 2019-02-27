@@ -1,0 +1,16 @@
+security:
+  oauth2:
+    client:
+      clientId: ${CLIENT_ID}
+      clientSecret: ${CLIENT_SECRET}
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      tokenName: prodtrak-service-client-id
+      clientAuthenticationScheme: form
+      scope: profile, email, openid
+    resource:
+          userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+---
+spring:
+  profiles: local
+
