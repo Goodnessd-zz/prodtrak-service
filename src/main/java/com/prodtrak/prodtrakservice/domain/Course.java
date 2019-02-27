@@ -12,14 +12,13 @@ public class Course {
 
     @Id
     private String id;
+    private String userId;
     private String name;
     private CourseDetails details;
-    private List<Log> logs;
 
-    public Course(String id, String name, CourseDetails details, List<Log> logs) {
+    public Course(String id, String name, CourseDetails details) {
         this.id = id;
         this.name = name;
         this.details = details;
-        this.logs = logs;
     }
 }

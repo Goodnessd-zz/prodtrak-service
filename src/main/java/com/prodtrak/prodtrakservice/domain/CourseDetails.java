@@ -6,10 +6,14 @@ import lombok.Data;
 public class CourseDetails {
 
     private Integer hoursSpent;
-    private Long currentGrade;
+    private Double currentGrade;
     private Integer daysRemaining;
 
-    public CourseDetails(Integer hoursSpent, Long currentGrade, Integer daysRemaining) {
+    public CourseDetails(){
+
+    }
+
+    public CourseDetails(Integer hoursSpent, Double currentGrade, Integer daysRemaining) {
         this.hoursSpent = hoursSpent;
         this.currentGrade = currentGrade;
         this.daysRemaining = daysRemaining;
